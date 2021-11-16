@@ -1,124 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>土肥直樹のホームページ</title>
-<meta name="viewport" content="width=device-width">
-<link href="https://fonts.googleapis.com/css?family=Paytone+One|Source+Sans+Pro:300,700" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>土肥直樹のホームページ</title>
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Paytone+One|Source+Sans+Pro:300,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="sample.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="sample.js"></script>
 
-<script>
+    <script>
+      function myFunc() {
+        document.querySelector("body").classList.toggle("open");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="site">
+      <a href="#">土肥　直樹</a>
+    </div>
 
-function myFunc() {
-	document.querySelector('body').classList.toggle('open');
-}
+    <article class="kiji">
+      <h1>
+        <span>エンジニア　日記</span>
+        エンジニアとしての活動
+      </h1>
 
-</script>
-</head>
-<body>
+      <div class="kijiinfo">
+        <time datetime="2020-05-13"><span>13</span> May 2020</time>
+        / Kochi, Ja
+      </div>
 
-<div class="site">
-<a href="#">土肥　直樹</a>
-</div>
-
-
-<article class="kiji">
-<h1>
-<span>エンジニア　日記</span>
-エンジニアとしての活動
-</h1>
-
-<div class="kijiinfo">
-<time datetime="2020-05-13"><span>13</span> May 2020</time>
-/ Kochi, Ja
-</div>
-
-<figure class="fig1">
-	<!-- <div class="button prev">
+      <figure class="fig1">
+        <!-- <div class="button prev">
 		<i class="fas fa-chevron-circle-left"></i>
 	</div> -->
-		<div class="slide ">
-			<img src="img/NAOKI.jpeg" alt="">
-		</div>
-		<div class="slide active">
-			<img src="img/NAOKI2.jpeg" alt="">
-		</div>
-		<div class="button prev">
-			<i class="fas fa-chevron-circle-left"></i>
-		</div>
-	<div class="button next">
-		<i class="fas fa-chevron-circle-right"></i>
-	</div>
-	<figcaption>
-	<strong>土肥直樹</strong>
-	フォト部の活動中に後輩がとってくれた写真。
-	</figcaption>
-</figure>
+        <div class="slide">
+          <img src="img/NAOKI.jpeg" alt="" />
+        </div>
+        <div class="slide active">
+          <img src="img/NAOKI2.jpeg" alt="" />
+        </div>
+        <div class="button prev">
+          <i class="fas fa-chevron-circle-left"></i>
+        </div>
+        <div class="button next">
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
+        <figcaption>
+          <strong>土肥直樹</strong>
+          フォト部の活動中に後輩がとってくれた写真。
+        </figcaption>
+      </figure>
 
-<p>学部4年の大学生です。<br>
-	I'm senior<br>
-	元ピアノ同好会代表
-</p>
-<p>コロナの感染者数予測をディープラーニングであるLSTM(長・短期記憶),GRU(ゲート付き回帰型ユニット)やSARIMA(季節調節自己回帰和分移動平均モデル)などを用いて行う地方国公立の大学生。<br>
-	東京のプログラミング教育企業のLife is Techの高知メンターとして長期休み期間中に中高生や大学生を対象にプログラミングを教えています。<br>
-	スタートアップの企業でDjangoとReactを用いてWEBアプリを開発していました。<br>
-	最近はよさこい団体の依頼でオンラインでよさこいができるように動画サイト作成したりポケ●ンG●のようなARで町中のコロナウイルスを倒すIphoneアプリを暇つぶしに作っています。
-<figure class="fig2">
-<img src="img/IMG_3563.jpg" alt="">
-	<figcaption>
-	<strong>沢渡茶</strong>
-	高知の特産茶
-	</figcaption>
-</figure>
+      <p>
+        大学院1年の大学生です。<br />
+        新型コロナウイルスの感染者数を機械学習(MLP,RNN,LSTM,GRU)と統計モデル(ARIMA,SARIMA)を用いて予測し比較研究を行う地方国公立の大学生。<br />
+        元ピアノ同好会代表<br />
+        みんなでよさこいプロジェクト用動画投稿アプリ開発者<br />
+        高知県檮原町教育DXアプリ開発者
+      </p>
+      <h2>過去</h2>
+      <p>
+        2018~2019: Life
+        is　Tech(株)の高知メンターとして長期休み期間中に中高生や大学生を対象にプログラミングを教えています。<br />
+        2020~:昨年度はみんなでよさこいプロジェクト実行委員会様から委託でよさこい動画投稿アプリを開発。(BootStrap,Django,Docker,Nginx,Gunicorn)<br />
+      </p>
+      <h2>現在</h2>
+      <p>
+        2021~:
+        自己省察のための手法(１日再構成法)のサブスクリプションサービス化(Flutter,Firebase,Stripe)<br />
+        2021~: 高知県檮原町教育DX用アプリの開発に着手
+      </p>
+      <figure class="fig2">
+        <img src="img/IMG_3563.jpg" alt="" />
+        <figcaption>
+          <strong>沢渡茶</strong>
+          高知の特産茶
+        </figcaption>
+      </figure>
+      <p>
+        高知で一番おすすめなあすなろのお茶と抹茶のワッフル。<br />
+        ほんとにおいしいので高知に来た際は<br />
+        蔦屋書店の中似あるのでぜひ。
+      </p>
 
-<p>高知で一番おすすめなあすなろのお茶と抹茶のワッフル。<br>
-ほんとにおいしい高知に来た際は<br>
-ひろめ市場の近くや蔦屋書店の中似あるのでぜひ。
-</p>
+      <figure class="fig3">
+        <img src="img/Corona.png" alt="" />
+        <figcaption>
+          <strong>コロナ予測</strong>
+          試験的にSARIMAmodelで予測したものです。<br />
+          ＊注　予測結果には一切の責任を持ちません。
+        </figcaption>
+      </figure>
+      <a href="https://covid-19-dashboard-56218.web.app"
+        >最近作成したCOVID−１９の感染者数確認アプリはこちら</a
+      >
+    </article>
 
-<figure class="fig3">
-<img src="img/Corona.png" alt="">
-	<figcaption>
-	<strong>コロナ予測</strong>
-	試験的にSARIMAmodelで予測したものです。<br>
-	＊注　予測結果には一切の責任を持ちません。
-	</figcaption>
-</figure>
-<a href="https://covid-19-dashboard-56218.web.app">最近作成したCOVID−１９の感染者数確認アプリはこちら</a>
+    <button type="button" onclick="myFunc()">
+      <span class="fa fa-bars"></span>
+      <span class="fa fa-close"></span>
+      <span class="sr-only">MENU</span>
+    </button>
 
-</article>
+    <nav class="menu">
+      <ul>
+        <li><a href=" https://naokidohi.github.io/My_page/">ホーム</a></li>
+        {% comment %}
+        <li><a href="https://twitter.com/Naoki_Dohi_0209">Twitter</a></li>
 
+        <li>
+          <a href="https://www.instagram.com/jonathan_naoki_/?hl=ja"
+            >instagram</a
+          >
+        </li>
 
-<button type="button" onclick="myFunc()">
-<span class="fa fa-bars"></span>
-<span class="fa fa-close"></span>
-<span class="sr-only">MENU</span>
-</button>
+        <li>
+          <a href="https://naokidohi.github.io/Gatsby-portfolio/"
+            >土肥直樹のホームページ国際版</a
+          >
+        </li>
+        {% endcomment %}
+        <li>
+          <a href="https://covid-19-dashboard-56218.web.app"
+            >COVID−１９感染者数確認アプリ</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-<nav class="menu">
-<ul>
-<li><a href=" https://naokidohi.github.io/My_page/">ホーム</a></li>
-<li><a href="https://twitter.com/Naoki_Dohi_0209">Twitter</a></li>
-<li><a href="https://www.instagram.com/jonathan_naoki_/?hl=ja">instagram</a></li>
-<li><a href="https://naokidohi.github.io/Gatsby-portfolio/">土肥直樹のホームページ国際版</a></li>	
-<li><a href="https://covid-19-dashboard-56218.web.app">COVID−１９感染者数確認アプリ</a></li>
-</ul>
-</nav>
+    <span class="page-cover" onclick="myFunc()"></span>
 
-<span class="page-cover" onclick="myFunc()"></span>
+    <div class="copyright">
+      <p>Copyright &copy; Naoki Dohi</p>
+    </div>
 
-
-<div class="copyright">
-<p>Copyright &copy; Naoki Dohi</p>
-</div>
-
-
-<span class="redbar"></span>
-
-</body>
+    <span class="redbar"></span>
+  </body>
 </html>
